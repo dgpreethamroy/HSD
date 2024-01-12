@@ -2,7 +2,7 @@ import pickle,pip
 import numpy as np
 def install(package):
     if hasattr(pip, 'main'):
-        pip.main(['install', '--user',package])
+        pip.main(['install',package])
     else:    
         pip._internal.main(['install', package])    
 install('scikit-learn')
