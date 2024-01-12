@@ -13,5 +13,5 @@ def hate_speech_detection():
         sample = user
         data = loaded_vec.transform(np.array([sample]))
         a = loaded_model.predict(data) 
-        st.title(a) 
+        st.title(a[0]) 
 hate_speech_detection()
